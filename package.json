@@ -1,19 +1,21 @@
 {
-  "name": "wagw",
+  "name": "y",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.5.0",
-    "express": "^5.1.0",
-    "mime-types": "^3.0.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "mime-types": "^3.0.2",
     "path": "^0.12.7",
+    "pino": "^10.3.1",
     "qrcode-terminal": "^0.12.0"
   }
 }

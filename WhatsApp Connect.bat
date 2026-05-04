@@ -3,13 +3,13 @@ cd /d C:\xampp\htdocs\klunting-bot
 
 echo [%date% %time%] Mulai eksekusi script...
 
-rem echo [%date% %time%] Menghapus folder auth...
-rem if exist auth (
-rem     rmdir /s /q auth
-rem     echo [%date% %time%] Folder auth berhasil dihapus.
-rem ) else (
-rem     echo [%date% %time%] Folder auth tidak ditemukan.
-rem )
+echo [%date% %time%] Menghapus folder auth...
+if exist auth (
+     rmdir /s /q auth
+     echo [%date% %time%] Folder auth berhasil dihapus.
+ ) else (
+     echo [%date% %time%] Folder auth tidak ditemukan.
+ )
 
 echo [%date% %time%] Menjalankan Klunting Bot...
 node index.js

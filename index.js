@@ -95,17 +95,11 @@ async function connectToWhatsApp() {
             });
 		}
 		
-		await sock.sendMessage(nomorWhatsApp, {
-			text: caption
-		})
-		
-		await setTimeout(2000)
-		
         await sock.sendMessage(nomorWhatsApp, {
 			document: buffer,
             mimetype: mimeType,
             fileName: path.basename(filePath),
-            caption: ''
+            caption: caption || ''
         })
 
         res.json({ status: 'success', message: 'File berhasil dikirim' });
